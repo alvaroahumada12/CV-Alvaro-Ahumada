@@ -103,6 +103,158 @@
       margin-bottom: 0.5rem;
     }
 
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      padding: 0.5rem 0.9rem;
+      border-radius: 20px;
+      background-color: #e0f2f1;
+      color: #00796b;
+      font-size: 0.95rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      cursor: default;
+    }
+
+    .tag:hover {
+      transform: scale(1.08);
+      background-color: #b2dfdb;
+    }
+
+    .dark-mode body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .dark-mode details {
+      background: var(--card-bg-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1.2rem; }
+      header h3 { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alvaro Ahumada - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #f0f4f8;
+      --dark-bg: #121212;
+      --primary: #00796b;
+      --text: #333;
+      --text-light: #eee;
+      --card-bg: #ffffff;
+      --card-bg-dark: #1e1e1e;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
+      margin-top: 0.2rem;
+      color: var(--primary);
+    }
+
+    header h3 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+
+    details {
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    details summary {
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    .timeline {
+      border-left: 3px solid var(--primary);
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-entry h4 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .timeline-entry p {
+      margin: 0.2rem 0 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
     .dark-mode body {
       background-color: var(--dark-bg);
       color: var(--text-light);
@@ -298,6 +450,28 @@ Desarrollado los días 9, 16 y 23 de Marzo de 2021 y dictado por Regenerarte, la
 
     <details>
       <summary>Habilidades</summary>
+      <ul>
+        <li>Microsoft Office, AutoCAD, IMDS, MGM Pectra, Python, PL SQL</li>
+        <li>Power BI, Bizagi, Git, Jira, Team Foundation Server, Azure DevOps</li>
+        <li>Optimización de procesos, pruebas de software, Scrum, Kanban</li>
+        <li>Gestión de productos, análisis funcional, documentación técnica</li>
+      </ul>
+    </details>
+  </section>
+
+  <footer>
+    &copy; 2025 Alvaro Ahumada. Portfolio personal.
+  </footer>
+</body>
+</html>
+
+
+
+
+
+<!-- La parte de habilidades reemplazada por los tag-cloud solicitados -->
+<details>
+  <summary>Habilidades</summary>
   <div class="tag-cloud">
     <span class="tag">Microsoft Office</span>
     <span class="tag">AutoCad</span>
@@ -350,11 +524,6 @@ Desarrollado los días 9, 16 y 23 de Marzo de 2021 y dictado por Regenerarte, la
     <span class="tag">Gestión de proyectos</span>
     <span class="tag">5s</span>
   </div>
-    </details>
-  </section>
-
-  <footer>
-    &copy; 2025 Alvaro Ahumada. Portfolio personal.
-  </footer>
+</details>
 </body>
 </html>
