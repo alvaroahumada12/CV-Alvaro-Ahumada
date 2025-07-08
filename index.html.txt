@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alvaro Ahumada - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #e0f7fa;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 180px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-left: 4px solid #00796b;
+      padding-left: 0.5rem;
+      color: #00796b;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul.skills li {
+      background: #e0f2f1;
+      color: #00695c;
+      margin: 0.3rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e0f7fa;
+      color: #555;
+      margin-top: 2rem;
+    }
+    a {
+      color: #00796b;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Foto-cv-web.png" alt="Alvaro Ahumada" />
+    <h1>Alvaro Ahumada</h1>
+    <p>Ingeniero Industrial con enfoque en procesos, QA y análisis de datos</p>
+  </header>
+
+  <section>
+    <h2>Experiencia Laboral</h2>
+    <div class="card">
+      <h3>Analista de Procesos / Productos Activos – Banco de Córdoba (Concentrix)</h3>
+      <p><strong>Marzo 2024 - Diciembre 2024</strong></p>
+      <p>Mejoras de procesos, documentación normativa, KPIs e informes de impacto.</p>
+    </div>
+    <div class="card">
+      <h3>Product Owner / QA Manual – Dirección Prov. de Vialidad</h3>
+      <p><strong>Junio 2022 - Enero 2024</strong></p>
+      <p>Testing, backlog, planificación de sprints y decisiones junto al equipo.</p>
+    </div>
+    <!-- Agregá más experiencia si querés -->
+  </section>
+
+  <section>
+    <h2>Formación Académica</h2>
+    <div class="card">
+      <h3>Ingeniería Industrial – UTN Córdoba</h3>
+      <p><strong>Finalizada en 2017</strong></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cursos y Seminarios</h2>
+    <div class="card">
+      <ul>
+        <li>Diplomatura en Metodologías Ágiles – UTN BA</li>
+        <li>Curso: Software Testing desde cero – Udemy</li>
+        <li>Curso: Power BI para principiantes – LinkedIn Learning</li>
+        <!-- Podés seguir completando -->
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ul class="skills">
+      <li>Power BI</li>
+      <li>Jira</li>
+      <li>PL/SQL</li>
+      <li>Testing Manual</li>
+      <li>Scrum</li>
+      <li>Procesos</li>
+      <li>Excel Avanzado</li>
+      <li>Bizagi</li>
+      <li>Git</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <div class="card">
+      <p>Inglés: Nivel B2 (British Council)</p>
+      <p>Italiano: Nivel A1 (SET Idiomas)</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:alvaroahumada12@gmail.com">alvaroahumada12@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/alvaroahumada">alvaroahumada</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Alvaro Ahumada. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
