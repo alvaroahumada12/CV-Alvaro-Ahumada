@@ -4,160 +4,202 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alvaro Ahumada - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Roboto+Slab&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --main-bg: #f0f4f8;
+      --dark-bg: #121212;
+      --primary: #00796b;
+      --text: #333;
+      --text-light: #eee;
+      --card-bg: #ffffff;
+      --card-bg-dark: #1e1e1e;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7');
+      background-size: cover;
+      background-attachment: fixed;
     }
+
     header {
-      background: #e0f7fa;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem 1rem;
     }
-    header img {
-      width: 180px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.8rem;
+      font-weight: 600;
     }
-    header p {
+
+    header h2 {
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
+      margin-top: 0.2rem;
+      color: var(--primary);
+    }
+
+    header h3 {
+      font-size: 1rem;
+      font-weight: normal;
       margin-top: 0.5rem;
-      font-size: 1.1rem;
-      color: #555;
     }
+
     section {
-      max-width: 800px;
-      margin: 2rem auto;
+      max-width: 1000px;
+      margin: 1rem auto;
       padding: 0 1rem;
     }
-    h2 {
-      border-left: 4px solid #00796b;
-      padding-left: 0.5rem;
-      color: #00796b;
-      margin-top: 2rem;
-    }
-    .card {
-      background: #fff;
-      padding: 1rem;
-      margin: 1rem 0;
+
+    details {
+      background: var(--card-bg);
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      padding: 1rem;
     }
-    .card h3 {
-      margin-top: 0;
+
+    details summary {
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--primary);
     }
-    ul.skills {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
+
+    .timeline {
+      border-left: 3px solid var(--primary);
+      margin-left: 1rem;
+      padding-left: 1rem;
     }
-    ul.skills li {
-      background: #e0f2f1;
-      color: #00695c;
-      margin: 0.3rem;
-      padding: 0.5rem 0.75rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
+
+    .timeline-entry {
+      margin-bottom: 1.5rem;
     }
+
+    .timeline-entry h4 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .timeline-entry p {
+      margin: 0.2rem 0 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .dark-mode body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .dark-mode details {
+      background: var(--card-bg-dark);
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #e0f7fa;
-      color: #555;
-      margin-top: 2rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
     }
-    a {
-      color: #00796b;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1.2rem; }
+      header h3 { font-size: 0.9rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="Foto-cv-web.png" alt="Alvaro Ahumada" />
-    <h1>Alvaro Ahumada</h1>
-    <p>Ingeniero Industrial con enfoque en procesos, QA y análisis de datos</p>
+    <h1><strong>Alvaro Ahumada</strong></h1>
+    <h2>Ingeniero Industrial</h2>
+    <h3>Analista de Procesos | Product Owner | QA Manual | Ingeniero de Producto | Analista funcional</h3>
   </header>
 
   <section>
-    <h2>Experiencia Laboral</h2>
-    <div class="card">
-      <h3>Analista de Procesos / Productos Activos – Banco de Córdoba (Concentrix)</h3>
-      <p><strong>Marzo 2024 - Diciembre 2024</strong></p>
-      <p>Mejoras de procesos, documentación normativa, KPIs e informes de impacto.</p>
-    </div>
-    <div class="card">
-      <h3>Product Owner / QA Manual – Dirección Prov. de Vialidad</h3>
-      <p><strong>Junio 2022 - Enero 2024</strong></p>
-      <p>Testing, backlog, planificación de sprints y decisiones junto al equipo.</p>
-    </div>
-    <!-- Agregá más experiencia si querés -->
-  </section>
+    <details open>
+      <summary>Experiencia</summary>
+      <div class="timeline">
+        <!-- Contenido completo copiado del CV en orden cronológico -->
+        <div class="timeline-entry">
+          <h4>Analista de Procesos – Banco de Córdoba (Concentrix)</h4>
+          <p>Marzo 2024 - Diciembre 2024</p>
+            <p>Aseguramiento de la eficiencia y productividad de los procesos asignados, cumpliendo con la normativa vigente y diseñando mejoras continuas.</p>
+            <p>Mantenimiento y actualización de la normativa y documentación de los procesos, garantizando la alineación con los manuales funcionales y estándares organizacionales.</p>
+            <p>Ejecución de procesos, elaboración de informes y desarrollo de indicadores para medir el impacto de las acciones realizadas.</p>
+            <p>Evaluación del impacto organizacional de los procesos e identificación de áreas de mejora.</p>
+         <p>Contacto: 
+           Victoria Compagnucci / Lina Guevara</p>
+            <p>Lic. Victoria Compagnucci (BANCOR) - Teléfono: +5493513978222</p>
+            <p>Lina Guevara (HR - Concentrix) - Teléfono: +5493513760012</p>
+        </div>
+        <div class="timeline-entry">
+          <h4>Product Owner / QA Manual – Dirección Provincial de Vialidad</h4>
+          <p>Junio 2022 - Enero 2024</p>
+          <p>Testing, evaluación, manejo de backlog, planificación de sprints, resolución de bugs. Contacto: Ing. Valeria Hric</p>
+        </div>
+        <!-- Agregá el resto igual que en el CV -->
+      </div>
+    </details>
 
-  <section>
-    <h2>Formación Académica</h2>
-    <div class="card">
-      <h3>Ingeniería Industrial – UTN Córdoba</h3>
-      <p><strong>Finalizada en 2017</strong></p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Cursos y Seminarios</h2>
-    <div class="card">
+    <details>
+      <summary>Formación Académica</summary>
       <ul>
-        <li>Diplomatura en Metodologías Ágiles – UTN BA</li>
-        <li>Curso: Software Testing desde cero – Udemy</li>
-        <li>Curso: Power BI para principiantes – LinkedIn Learning</li>
-        <!-- Podés seguir completando -->
+        <li>Bachiller en Humanidades - Instituto Catalina Caviglia de Visca (2008)</li>
+        <li>Ingeniería Industrial - UTN Córdoba (2017)</li>
       </ul>
-    </div>
-  </section>
+    </details>
 
-  <section>
-    <h2>Habilidades</h2>
-    <ul class="skills">
-      <li>Power BI</li>
-      <li>Jira</li>
-      <li>PL/SQL</li>
-      <li>Testing Manual</li>
-      <li>Scrum</li>
-      <li>Procesos</li>
-      <li>Excel Avanzado</li>
-      <li>Bizagi</li>
-      <li>Git</li>
-    </ul>
-  </section>
+    <details>
+      <summary>Posgrados, Cursos, Jornadas y Congresos</summary>
+      <ul>
+        <li>Diplomatura en Metodologías y Marcos de Trabajo Ágiles – UTN-BA (2022)</li>
+        <li>Curso: Software Testing desde cero – Udemy (2024)</li>
+        <li>Curso: Power BI – Linkedin Learning (2021, 2025)</li>
+        <li>Curso: Excel para analistas de negocios – Linkedin Learning (2023)</li>
+        <li>Seminarios de ecología política, empleo verde, proyectos sostenibles, etc.</li>
+      </ul>
+    </details>
 
-  <section>
-    <h2>Idiomas</h2>
-    <div class="card">
-      <p>Inglés: Nivel B2 (British Council)</p>
-      <p>Italiano: Nivel A1 (SET Idiomas)</p>
-    </div>
-  </section>
+    <details>
+      <summary>Idiomas</summary>
+      <ul>
+        <li>Inglés: Nivel B2 (Asociación Argentina de Cultura Británica, 2023)</li>
+        <li>Italiano: Nivel A1 (SET Idiomas, 2017)</li>
+      </ul>
+    </details>
 
-  <section>
-    <h2>Contacto</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:alvaroahumada12@gmail.com">alvaroahumada12@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/alvaroahumada">alvaroahumada</a></p>
-    </div>
+    <details>
+      <summary>Habilidades</summary>
+      <ul>
+        <li>Microsoft Office, AutoCAD, IMDS, MGM Pectra, Python, PL SQL</li>
+        <li>Power BI, Bizagi, Git, Jira, Team Foundation Server, Azure DevOps</li>
+        <li>Optimización de procesos, pruebas de software, Scrum, Kanban</li>
+        <li>Gestión de productos, análisis funcional, documentación técnica</li>
+      </ul>
+    </details>
   </section>
 
   <footer>
-    &copy; 2025 Alvaro Ahumada. Todos los derechos reservados.
+    &copy; 2025 Alvaro Ahumada. Portfolio personal.
   </footer>
 </body>
 </html>
+
