@@ -55,6 +55,757 @@
 <body>
   <div class="slideshow-background"></div>
   <!-- Aquí comienza el resto del contenido existente de la página -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alvaro Ahumada - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --main-bg: #f0f4f8;
+      --dark-bg: #121212;
+      --primary: #00796b;
+      --text: #333;
+      --text-light: #eee;
+      --card-bg: #ffffff;
+      --card-bg-dark: #1e1e1e;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
+      margin-top: 0.2rem;
+      color: var(--primary);
+    }
+
+    header h3 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+
+    details {
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    details summary {
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    .timeline {
+      border-left: 3px solid var(--primary);
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-entry h4 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .timeline-entry p {
+      margin: 0.2rem 0 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      padding: 0.5rem 0.9rem;
+      border-radius: 20px;
+      background-color: #e0f2f1;
+      color: #00796b;
+      font-size: 0.95rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      cursor: default;
+    }
+
+    .tag:hover {
+      transform: scale(1.08);
+      background-color: #b2dfdb;
+    }
+
+    .dark-mode body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .dark-mode details {
+      background: var(--card-bg-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1.2rem; }
+      header h3 { font-size: 0.9rem; }
+    }
+
+    .fixed-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
+    }
+
+    .fixed-buttons a {
+      text-decoration: none;
+      background-color: #00796b;
+      color: white;
+      padding: 0.7rem 0.9rem;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .fixed-buttons a:hover {
+      background-color: #004d40;
+    }
+
+.about {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 1rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+  </style>
+</head>
+<body>
+  <!-- Tu contenido completo ya está incluido aquí (secciones, experiencia, etc.) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alvaro Ahumada - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #f0f4f8;
+      --dark-bg: #121212;
+      --primary: #00796b;
+      --text: #333;
+      --text-light: #eee;
+      --card-bg: #ffffff;
+      --card-bg-dark: #1e1e1e;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
+      margin-top: 0.2rem;
+      color: var(--primary);
+    }
+
+    header h3 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+
+    details {
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    details summary {
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    .timeline {
+      border-left: 3px solid var(--primary);
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-entry h4 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .timeline-entry p {
+      margin: 0.2rem 0 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      padding: 0.5rem 0.9rem;
+      border-radius: 20px;
+      background-color: #e0f2f1;
+      color: #00796b;
+      font-size: 0.95rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      cursor: default;
+    }
+
+    .tag:hover {
+      transform: scale(1.08);
+      background-color: #b2dfdb;
+    }
+
+    .dark-mode body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .dark-mode details {
+      background: var(--card-bg-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1.2rem; }
+      header h3 { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alvaro Ahumada - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #f0f4f8;
+      --dark-bg: #121212;
+      --primary: #00796b;
+      --text: #333;
+      --text-light: #eee;
+      --card-bg: #ffffff;
+      --card-bg-dark: #1e1e1e;
+    }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      background-image: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-family: 'Roboto Slab', serif;
+      margin-top: 0.2rem;
+      color: var(--primary);
+    }
+
+    header h3 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+
+    details {
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    details summary {
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    .timeline {
+      border-left: 3px solid var(--primary);
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-entry h4 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .timeline-entry p {
+      margin: 0.2rem 0 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .dark-mode body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+    }
+
+    .dark-mode details {
+      background: var(--card-bg-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1.2rem; }
+      header h3 { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><strong>Alvaro Ahumada</strong></h1>
+    <h2>Ingeniero Industrial</h2>
+    <h3>Analista de Procesos | Product Owner | QA Manual | Ingeniero de Producto | Analista funcional</h3>
+  </header>
+<section class="about">
+  <div class="about-container">
+    <img src="Foto.png" alt="Foto de Alvaro Ahumada" class="about-photo" />
+    <div class="about-text">
+      <h2>Sobre mí</h2>
+      <p>Mi nombre es <strong>Alvaro Ahumada</strong>, soy egresado de la carrera de Ingeniería Industrial en la UTN FRC.</p>
+      <p>Cuento con experiencia en distintos sectores, incluyendo la industria, la banca, el ámbito público y la tecnología, donde he trabajado en análisis, rediseño e implementación de procesos, aseguramiento de calidad y gestión de productos. Mi enfoque se basa en la eficiencia operativa, la toma de decisiones basada en datos y la adaptación a entornos dinámicos.</p>
+      <p>Poseo habilidades en metodologías ágiles, testing de software, gestión de cambios y manejo de normativas, siempre con una mirada estratégica para la mejora organizacional. Además, mi capacidad para coordinar equipos, comunicarme eficazmente y analizar el impacto de cada acción me permite aportar valor en distintos ámbitos profesionales.</p>
+      <p>Me motiva la innovación, la optimización de procesos y el aprendizaje continuo, buscando siempre soluciones eficientes y sustentables. Considero que tengo un perfil versátil y orientado a la optimización de procesos, la gestión de productos y la mejora continua.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section>
+    <details>
+      <summary>Experiencia</summary>
+      <div class="timeline">
+        <!-- Contenido completo copiado del CV en orden cronológico -->
+     <div class="timeline-entry">
+          <ul>
+            <h4>Analista de Procesos – Banco de Córdoba (Concentrix)</h4>
+          <p>Marzo 2024 - Diciembre 2024</p>
+           <ul>
+           <li>Aseguramiento de la eficiencia y productividad de los procesos asignados, cumpliendo con la normativa vigente y diseñando mejoras continuas.</li>
+           <li>Mantenimiento y actualización de la normativa y documentación de los procesos, garantizando la alineación con los manuales funcionales y estándares organizacionales.</li>
+           <li>Ejecución de procesos, elaboración de informes y desarrollo de indicadores para medir el impacto de las acciones realizadas.</li>
+           <li>Evaluación del impacto organizacional de los procesos e identificación de áreas de mejora.</li>
+          </ul>
+          <p>Referencias:</p>
+            <ul>  
+              <li>Lic. Victoria Compagnucci (BANCOR) - Teléfono: +5493513978222</li>
+              <li>Lina Guevara (HR - Concentrix) - Teléfono: +5493513760012 - Mail: linamaricel.guevara@concentrix.com</li>
+            </ul>
+        </div>
+
+ <div class="timeline-entry">
+          <ul>
+            <h4>Product Owner / QA Manual en Dirección Provincial de Vialidad</h4>
+          <p>Junio 2022 - Enero 2024</p>
+           <ul>
+        <li>Evaluación de los resultados</li>
+	<li>Desarrollo en base de datos.</li>
+	<li>Maximización del valor entregado y manejo de Product Backlog en Team Foundation Server.</li>
+	<li>Participación en la definición de objetivos, sprints planning, reviews y retrospectivas.</li>
+	<li>Colaboración con el equipo de desarrollo para la resolución de bugs, feats y tasks.</li>
+	<li>Conocimiento del negocio y participación en la toma de decisiones.</li>
+          </ul>
+          <p>Referencias:</p>
+            <ul>  
+              <li>Ing. Valeria Hric - Teléfono: +5493515489643</li>
+            </ul>
+        </div>
+
+<div class="timeline-entry">
+          <ul>
+            <h4>Analista de Procesos y Software Tester en Centro de Inv. y Desarrollo (UTN-FRC)</h4>
+          <p>Agosto 2019 – Junio 2022</p>
+           <ul>
+        <li>Relevamiento, análisis y rediseño de procesos en el Ministerio de Obras Públicas.</li>
+	<li>Realización de pruebas manuales del Portal de Obras Públicas en diferentes entornos.</li>
+	<li>Revisión de la documentación.</li>
+	<li>Detección de potenciales fallos e informe de los mismos.</li>
+	<li>Trabajo con equipo de desarrollo de software y soporte.</li>
+          </ul>
+          <p>Referencias:</p>
+            <ul>  
+              <li>Cr. Raquel Pedano - Teléfono: +5493512238948</li>
+            </ul>
+        </div>
+
+
+ <div class="timeline-entry">
+          <ul>
+            <h4>Analista de procesos en Centro de Inv. y Desarrollo (UTN-FRC)</h4>
+          <p>Febrero 2019 – Agosto 2019</p>
+           <ul>
+        <li>Relevamiento, análisis, diseño, validación y reingeniería de procesos en Empresa Provincial de Energía Córdoba.</li>
+          </ul>
+          <p>Referencias:</p>
+            <ul>  
+              <li>Ing. Ángeles Cicerone - Teléfono: +5493512475338</li>
+            </ul>
+        </div>
+
+
+ <div class="timeline-entry">
+          <ul>
+            <h4>Ingeniero de Producto en DENSO MANUFACTURING ARGENTINA S.A.</h4>
+          <p>Octubre 2015 - Febrero 2018</p>
+           <ul>
+        <li>Manejo del sistema EMS: alta, clasificación, descripción y modificación de piezas, materiales y productos terminados. Manejo de BOM, Disassembly check.
+	<li>Utilización del sistema MGM PECTRA para realizar gestión de cambios de ingeniería difundidos por la casa matriz de DENSO Japón y DENSO Italia: se realizaba un seguimiento semanal, se gestionaban mejoras al sistema y se capacitaba al personal. Además, se analizaban los cambios y se proponían mejoras.</li>
+	<li>Manejo de IMDS (International Materia Data System), el cual sirve para identificar cantidades y calidades de materiales de proveedores y para brindarle mayor información al cliente sobre los productos: se realizaba el MDS de cada producto fabricado en DNAR, previamente se compilaban pruebas y controles para aprobar los MDS de proveedores.</li>
+	<li>Comprensión, clasificación, comparación y pedido de planos y normas a casa Matriz. Elaboración de especificaciones de producto mediante lectura de planos.</li>
+	<li>Soporte, análisis de producto y participación en plan de validación para localización de piezas.</li>
+	<li>Soporte de información técnica al resto de las áreas de la empresa.</li>
+	<li>Participación como Auditor 5s por distintas áreas de la empresa.</li>
+	<li>Participación en círculos de calidad.</li>
+          </ul>
+          <p>Referencias:</p>
+            <ul>  
+              <li>Sr. Alberto Kimura - Teléfono: +5493517509048</li>
+            </ul>
+        </div>
+
+
+
+ <div class="timeline-entry">
+          <ul>
+            <h4>Asociación Vocacional de Estudiantes e Ingenieros Tecnológicos.</h4>
+          <p>Marzo 2012 - Diciembre 2017</p>
+           <ul>
+        <li>Integrante de la subcomisión RIFAS.</li>
+	<li>Miembro del Tribunal de Disciplina.</li>
+           </ul>
+        </div>
+
+
+ <div class="timeline-entry">
+          <ul>
+            <h4>Emprendimiento personal - Lavadero de autos.</h4>
+          <p>Eenero 2008 - Diciembre 2008</p>
+           <ul>
+	<li>Fundador y gestor de un servicio de lavado de autos organizado junto a compañeros.</li>
+	<li>Planificación y ejecución de estrategias para captar clientes y optimizar recursos.</li>
+	<li>Administración de ingresos y costos para financiar viaje de egresados.</li>
+	<li>Coordinación del equipo y distribución de tareas para maximizar eficiencia.</li>
+           </ul>
+        </div>
+
+    </details>
+
+    <details>
+      <summary>Formación Académica</summary>
+      <ul>
+  	<li>Estudios Universitarios: Carrera de Ingeniería Industrial en la Universidad Tecnológica Nacional, Facultad Regional Córdoba. Finalizada en Noviembre de 2017</li>      
+	<li>Estudios Secundarios: Título de Bachiller Orientado en Humanidades, Especialidad Ciencias Sociales.  Otorgado por el Instituto Catalina Caviglia de Visca -Sociedad Hijas del Divino Salvador -Oliva (Provincia de Córdoba)- Año 2008.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Posgrados, Cursos, Jornadas y Congresos</summary>
+      <ul>
+<li>Diplomatura en Metodologías y Marcos de Trabajo Ágiles dictado por el Centro de e-Learning SCEU UTN-BA durante los meses de marzo, abril y mayo de 2022.</li>
+<li>Participación como Asistente al “Seminario intensivo Proyectos Sociales y Desarrollo Sostenible: Herramientas para la práctica”, organizado por Ingeniería Sin Fronteras Argentina / Universidad Tecnológica Nacional – Facultad Regional Córdoba. Noviembre 2019.</li>
+<li>Curso: Software Testing desde cero: MasterClass todo en 1 (2024). Dictado por Ing. Esteban Balvin (Udemy).</li>
+<li>Curso: Power BI para principiantes: Análisis de datos (2021). Dictado por: Ana María Bisbé York - Linkedin Learning.</li>
+<li>Curso: Aprende Power BI (Mayo 2021). Dictado por: Ana María Bisbé York - Linkedin Learning.</li>
+<li>Curso: Excel para analistas de negocios (Abril 2023). Dictado por: Carlos Sogorb - Linkedin Learning.</li>
+<li>Curso: IA aplicada para aprendizaje y desarrollo: Herramientas y Agentes (Diciembre 2024). Dictado por: Lorena Díaz Quijano - Linkedin Learning.</li>
+<li>Curso: Power BI esencial (Febrero 2025). Dictado por: Ana María Bisbé York - Linkedin Learning.</li>
+<li>Curso: Especializate en Jira, la herramienta lider de gestión de proyectos (Julio 2023). Dictado por Fabián López (Lider de la comunidad Atlassian) - Linkedin 
+Learning.</li>
+<li>Curso: Github para desarrolladores (Febrero 2025). Dictado por Carlos Solís (Desarrollador móvil, formador y autor) - Linkedin Learning.</li>
+<li>Participación como Asistente al IX CONGRESO DE ESTUDIANTES DE INGENIERÍA INDUSTRIAL Y CARRERAS AFINES, realizado desde el 12 al 15 de octubre. Ciudad de Mendoza- Argentina. Año 2011.</li>
+<li>Participación como Asistente al XIII CONGRESO DE ESTUDIANTES DE INGENIERÍA INDUSTRIAL Y CARRERAS AFINES, realizado desde el 20 al 23 de agosto. Ciudad de Mar del Plata- Argentina. Año 2015.</li>
+<li>Participación como Asistente en el PRIMER MÓDULO DE EMPRENDEDORISMO, organizado por el Departamento de Ingeniería Industrial y sus Graduados, dictado por la Universidad Tecnológica Nacional, Facultad Regional Córdoba y desarrollado el día 6 de agosto. Córdoba 2012.</li>
+<li>Participación como Asistente en el II MÓDULO DE EMPRENDEDORISMO, organizado por el Departamento de Ingeniería Industrial y sus Graduados, dictado por la Universidad Tecnológica Nacional, Facultad Regional Córdoba y desarrollado el día 30 de agosto. Córdoba 2012.</li>
+<li>Participación como Asistente a la Conferencia Internacional en Emprendedorismo,” PROYECTOS: Cómo llevar la idea a la acción”, organizado por el Departamento de Ingeniería Industrial y UTN Emprende, desarrollado el día 28 de Mayo en la Universidad Tecnológica Nacional, Facultad Regional Córdoba. Córdoba 2013.</li>
+<li>Participación como Asistente a la XXI Jornadas Simultáneas de Estudiantes de Ingeniería Industrial y carreras afines, “Materializando proyectos creativos, ¿hasta dónde sos capaz de llegar?”, organizado por la Asociación Argentina de Estudiantes de Ingeniería Industrial y carreras afines, desarrollado el día 21 de mayo en la Universidad Tecnológica Nacional, Facultad Regional Córdoba. Córdoba 2015.</li>
+<li>Participación en capacitación en MGM Pectra. Córdoba 2017.</li>
+<li>Participación como Asistente al seminario “La ecología política, una herramienta para la emancipación”, desarrollado el 1, 8 y 22 de octubre de 2018 y dictado por Leonardo Rossi (periodista e investigador del CONICET).
+Temática: Los escenarios de poscapitalismo muestran a un hombre prototípico alejado de los ciclos naturales, sin más horizontes que las pantallas. En un contexto de profundización de procesos extractivos y destructivos de los ciclos naturales, el curso Ecología política y horizontes emancipatorios ofrece herramientas teórico conceptuales para re pensar la relación hombre naturaleza y, a su vez, la re construcción de discursos que permitan re conciliar el ciclo vital con la vida cotidiana y la re producción de simbólica de los mensajes.</li>
+<li>Ciclo de Entrevistas - Empleo Verde. En un contexto de desempleo, de subempleo, de necesidades de reskilling y upskilling y de una acelerada crisis climática y ecosistémica es necesario conocer alternativas beneficiosas para las personas, las economías y el ecosistema. Reflexionar y aprender sobre alternativas que ya existen para contribuir con un cambio positivo: La creación y promoción de empleo verde.
+Desarrollado los días 9, 16 y 23 de Marzo de 2021 y dictado por Regenerarte, la primera Escuela de Empleo Verde de Argentina y la Secretaría de Extensión Universitaria de la UTN Córdoba.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Idiomas</summary>
+      <ul>
+        <li>Inglés: Diploma de aprobación del nivel B2 Upper Intermediate en la Asociación Argentina de Cultura Británica (Diciembre 23)</li>
+        <li>Italiano: Diploma de aprobación del nivel A1 (*MCER) de italiano dentro del programa de Capacitación de Idiomas para empresas, dictado desde el 12 de abril al 1 de diciembre de 2017 por SET Idiomas.</li>
+      </ul>
+    </details>
+
+<!-- La parte de habilidades reemplazada por los tag-cloud solicitados -->
+<details>
+  <summary>Habilidades</summary>
+  <div class="tag-cloud">
+    <span class="tag">Microsoft Office</span>
+    <span class="tag">AutoCad</span>
+    <span class="tag">IMDS</span>
+    <span class="tag">MGM Pectra</span>
+    <span class="tag">Python</span>
+    <span class="tag">PL SQL</span>
+    <span class="tag">Team Foundation Server</span>
+    <span class="tag">Azure DevOps</span>
+    <span class="tag">Trello</span>
+    <span class="tag">ARIS - Arquitectura de sistemas</span>
+    <span class="tag">EMS - Enterprise Management</span>
+    <span class="tag">Power BI</span>
+    <span class="tag">Bizagi</span>
+    <span class="tag">Git</span>
+    <span class="tag">Jira</span>
+    <span class="tag">Diseño CAD</span>
+    <span class="tag">Obtención de requisitos</span>
+    <span class="tag">Optimización de procesos</span>
+    <span class="tag">Pruebas funcionales</span>
+    <span class="tag">Mejora continua</span>
+    <span class="tag">Pruebas de software</span>
+    <span class="tag">Scrum</span>
+    <span class="tag">Administración</span>
+    <span class="tag">Relaciones interpersonales</span>
+    <span class="tag">Documentación técnica</span>
+    <span class="tag">Desarrollo de procesos</span>
+    <span class="tag">Casos de prueba</span>
+    <span class="tag">Análisis funcional</span>
+    <span class="tag">Comunicación</span>
+    <span class="tag">Análisis de negocio</span>
+    <span class="tag">Excel para analistas</span>
+    <span class="tag">Kanban</span>
+    <span class="tag">Gestión ágil</span>
+    <span class="tag">Toma de decisiones</span>
+    <span class="tag">Resolución de problemas</span>
+    <span class="tag">Mejora de procesos</span>
+    <span class="tag">Historias de usuarios</span>
+    <span class="tag">Gestión de productos</span>
+    <span class="tag">Metodologías ágiles</span>
+    <span class="tag">PL/SQL</span>
+    <span class="tag">Facilidad de adaptación</span>
+    <span class="tag">AutoCAD</span>
+    <span class="tag">Inglés</span>
+    <span class="tag">Microsoft Excel</span>
+    <span class="tag">Manejo de IMDS system</span>
+    <span class="tag">Teamwork</span>
+    <span class="tag">Team Leadership</span>
+    <span class="tag">Strategic Planning</span>
+    <span class="tag">Gestión de proyectos</span>
+    <span class="tag">5s</span>
+  </div>
+
+    </details>
+  </section>
+
+  <footer>
+    &copy; 2025 Alvaro Ahumada. Portfolio personal.
+  </footer>
+</body>
+</html>
+  <!-- Botones flotantes -->
+  <div class="fixed-buttons">
+    <a href="https://wa.me/5493512492813" target="_blank" title="Escribime por WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="mailto:alvaroahumada12@gmail.com" title="Enviame un correo">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</body>
+</html>
   <!-- ... -->
 </body>
 </html>
